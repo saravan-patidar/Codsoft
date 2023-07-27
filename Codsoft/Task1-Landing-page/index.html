@@ -12,7 +12,7 @@
 <body>
     <nav>
         <div class="container nav-bar flex">
-            <img class="logo" src="./images.png" alt="logo-roadmap">
+            <img class="logo bg-remove" src="./images.png" alt="logo-roadmap">
             <ul class="nav-bar-list flex">
                 <li class="nav-list side hover-links">Home</li>
                 <li class="nav-list side hover-links">Best Practice</li>
@@ -23,11 +23,42 @@
         </div>
     </nav>
     <header>
-        <div class="container header-sec">
-            <h1>Developer Roadmaps</h1>
-            <p>roadmap is a community effort to create roadmaps, guides and other educational content to help guide
-                developers in picking up a path and guide their learnings.</p>
-            <span class="arrow"><i class="fa-sharp fa-solid fa-arrow-down"></i></span>
+        <div class="container header-sec flex">
+            <div class="left-part">
+                <h3>All the roadmaps are available</h3>
+                <h1>Developer Roadmaps</h1>
+                <p>Roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide
+                    developers in picking up a path and guide their learnings.</p></div>
+            <div class="right-part">
+                <input type="radio" name="image" id="image1" checked> 
+                <input type="radio" name="image" id="image2">
+                <input type="radio" name="image" id="image3">
+                <div class="featured-wrapper">
+                    <ul class="featured-list">
+                        <li>
+                            <img class="bg-remove" src="./Full_stack_developer-.webp" alt="">
+                        </li>
+                        <li>
+                            <img class="bg-remove" src="./roadmap-.jfif" alt="">
+                        </li>
+                        <li>
+                            <img class="bg-remove" src="./j-developer.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="dots">
+                        <li>
+                            <label for="image1"></label>
+                        </li>
+                        <li>
+                            <label for="image2"></label>
+                        </li>
+                        <li>
+                            <label for="image3"></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="arrow"><i class="fa-2x fa-sharp fa-solid fa-arrow-down"></i></span>
         </div>
     </header>
 
