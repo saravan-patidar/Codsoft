@@ -140,7 +140,7 @@ input[type="radio"] {
     height: 100%;
 }
 .bg-remove{
-    mix-blend-mode: soft-light;
+    mix-blend-mode: difference;
 }
 .featured-wrapper {
     position: relative;
