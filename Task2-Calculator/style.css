@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body {
+    background: rgb(16, 61, 156);
+    background: linear-gradient(to right bottom, #103d9f 10%, #2aa4c6 30%, rgba(41, 101, 226, 0.9920343137254902) 50%, #4299d6fa 70%, rgba(56, 28, 148, 0.9808298319327731) 90%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calculator {
+    width: 30rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    background: rgb(52,35,186);
+    background-color: #2e2288;
+    box-shadow: 0 0 10px #2e2288ba;
+    border-radius: 10px;
+}
+
+.c-display input {
+    height: 100px;
+    width:100%;
+    padding: .2rem;
+    text-align: right;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    font-size: 3rem;
+}
+.c-keys{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 1rem;
+}
+.c-keys .btn0{
+    grid-column: 1/span 2;
+    width: auto;
+}
+.c-keys .btnAdd{
+    grid-column: 4;
+    grid-row:3/ 5 ;
+    height:70px;
+}
+.c-keys .btnEq{
+    grid-column: 4;
+    grid-row:4/ 6 ;
+    margin-top: 1.5rem;
+    height:auto;
+}
+
+.c-keys button{
+    display: inline;
+    width: 5rem;
+    height: 3.2rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #1a4eba;
+    color: rgb(217, 220, 222);
+}
+.c-keys button:hover{
+    background-color: #779ceae3;
+}
+
+@media (min-width: 768px) and (max-width:1200px) {
+    .calculator {
+        width: 60%; 
+    }
+}
+
+
+@media (max-width: 550px) {
+    .calculator {
+        width: 90%; 
+        font-size: 1.5rem;
+    }
+
+    .c-keys button{
+        font-size: 1.5rem;
+       width: 3rem;
+    }
+}
+@media (max-width: 300px) {
+    /* .calculator {
+        width: 90%; 
+        font-size: 1.5rem;
+    } */
+    .c-keys{
+        grid-template-columns: repeat(3,1fr);
+        gap: 3px;
+    }
+}

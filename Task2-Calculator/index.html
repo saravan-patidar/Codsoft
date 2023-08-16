@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="calculator">
+            <div class="c-display">
+                <input type="text" id="result" placeholder="0" readonly>
+            </div>
+            <div class="c-keys">
+                <button class="btnAC">AC</button>
+                <button class="btnBS">⌫</button>
+                <button class="btn btn/">/</button>
+                <button class="btn btn*">*</button>
+                <button class="btn btn7">7</button>
+                <button class="btn btn8">8</button>
+                <button class="btn btn9">9</button>
+                <button class="btn btn-">-</button>
+                <button class="btn btn4">4</button>
+                <button class="btn btn5">5</button>
+                <button class="btn btn6">6</button>
+                <button class="btn btnAdd">+</button>
+                <button class="btn btn1">1</button>
+                <button class="btn btn2">2</button>
+                <button class="btn btn3">3</button>
+                <button class="btn btn0">0</button>
+                <button class="btn btnPoint">.</button>
+                <button class="btnEq">=</button>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const result = document.querySelector("#result");
+        const button = document.querySelectorAll(".btn");
+        const equal = document.querySelector(".btnEq");
+        const Ac = document.querySelector(".btnAC");
+        const backSpace = document.querySelector(".btnBS");
+
+        let string='';
+        button.forEach((btn)=>{
+            btn.addEventListener('click',(e)=>{
+                string += e.target.innerText;
+                result.value = string;
+                // clear();
+            })
+        });
+
+        equal.addEventListener('click',()=>{
+            try {
+                const ans = eval(string);
+                result.value = ans.toString();
+            } catch (error) {
+                result.value = "Error";
+            }
+            string='';
+        });
+
+        Ac.addEventListener('click',clear);
+        function clear(){
+            string='';
+            result.value = string;
+        }
+        backSpace.addEventListener('click',()=>{
+            string = string.slice(0,-1)
+            result.value=string;
+        });
+
+    </script>
+</body>
+
+</html>
