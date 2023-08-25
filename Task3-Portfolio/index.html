@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('mHOUZLQ-MAjvNU8wy')
+    </script>
+
+    <script src="https://kit.fontawesome.com/2e6bcb221f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="Home">
+        <nav class="flex nav-bar">
+            <div class="logo"><img src="./images/images.png" alt="Logo"></div>
+            <div class="menubtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-items flex">
+                <li class="nav-li"><a href="#Home">Home</a></li>
+                <li class="nav-li"><a href="#about">About</a></li>
+                <li class="nav-li"><a href="#skill">Skills</a></li>
+                <li class="nav-li"><a href="#project">Project</a></li>
+                <li class="nav-li"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="home-sec flex">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Saravan Patidar</h1>
+                <h3>And I'm a <span class="name-c">Frontend Developer</span></h3>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="./IMG_20230820_164134.jpg" class="myImage" alt="frontend Developer image">
+            </div>
+
+        </div>
+    </header>
+    <section id="about" class="about-bg">
+        <div class="about-sec flex">
+            <div class="about-image">
+                <img src="./IMG_20230820_164134.jpg" class="myImage" alt="Images">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span class="name-c">Me</span></h2>
+                <h3>Frontend Developer</h3>
+                <p>I am thrilled to introduce myself as a frontend developer who recently graduated in 2023. I am
+                    passionate about creating visually appealing and user-friendly websites and web applications that
+                    deliver seamless experiences to users.
+                    I honed my skills in HTML, CSS, JavaScript,I am an ardent learner and always eager to stay updated
+                    with the latest trends and advancements in the frontend development space.
+                </p>
+                <a href="#" class="btn">Read more on Linkedin</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="education" class="study flex">
+        <section class="Education-sec">
+            <h2 class="heading">My <span class="name-c">Education</span></h2>
+            <div class="edu-box">
+                <i class="fa-3x fa-solid fa-book-open-reader fa-beat-fade"></i>
+                <h3>High school certificate</h3>
+                <p>Accomplished high school graduate with a solid academic record, successfully completing 10th grade at
+                    Bright Arsenal Higher Secondary School, Dewas, under the esteemed MP Board in 2017.</p>
+            </div>
+            <div class="edu-box">
+                <i class="fa-3x fa-solid fa-building-columns fa-beat-fade"></i>
+                <h3>Higher secondary</h3>
+                <p>Passionate graduate of Bright Arsenal Higher Secondary School, Dewas, completing 12th grade in 2019
+                    with a specialization in mathematics (PCM), demonstrating an unwavering commitment to my
+                    future-deciding subjects and a strong drive for academic excellence.</p>
+            </div>
+            <div class="edu-box">
+                <i class="fa-3x fa-solid fa-graduation-cap fa-beat-fade"></i>
+                <h3>Bachelor of Technology</h3>
+                <p>Dynamic and results-driven B.Tech graduate in Information Technology from Swami Vivekananda College,
+                    Indore, MP, equipped with a strong foundation in IT and a proven ability to leverage technical
+                    skills to drive innovative solutions.</p>
+            </div>
+        </section>
+
+        <section id="skill" class="skill-sec flex ">
+            <h2 class="heading">Skills</h2>
+            <div class="skill-box flex">
+                <i class="fa-3x fa-brands fa-html5 fa-beat-fade"></i>
+                <p>HTML</p>
+                <div class="range-skil">
+                    <div class="skill html">90%</div>
+                </div>
+            </div>
+            <div class="skill-box flex">
+                <i class="fa-3x fa-brands fa-css3 fa-beat-fade"></i>
+                <p>CSS</p>
+                <div class="range-skil">
+                    <div class="skill css">80%</div>
+                </div>
+            </div>
+            <div class="skill-box flex">
+                <i class="fa-3x fa-brands fa-js fa-beat-fade"></i>
+                <p>JavaScript</p>
+                <div class="range-skil">
+                    <div class="skill js">60%</div>
+                </div>
+            </div>
+            <div class="skill-box flex">
+                <i class="fa-3x fa-brands fa-java fa-beat-fade"></i>
+                <p>Java</p>
+                <div class="range-skil">
+                    <div class="skill java">70%</div>
+                </div>
+            </div>
+            <div class="skill-box flex">
+                <i class="fa-3x fa-solid fa-database fa-beat-fade"></i>
+                <p>SQL</p>
+                <div class="range-skil">
+                    <div class="skill sql">65%</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section id="project" class="project-section">
+        <h2 class="heading">Projects</h2>
+        <div class=" project-container">
+            <div class="project-box">
+                <img src="./images/ToDo-list-pic.png" alt="">
+                <div class="pro-layer  flex">
+                    <h4>ToDO-List </h4>
+                    <p>Used in HTML, CSS & Js</p>
+                    <a href="https://github.com/saravan-patidar/OctaNet-/tree/main/ToDo-List" target="_blank">More</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="./images/count-timer.png" alt="">
+                <div class="pro-layer flex">
+                    <h4>Count Timer</h4>
+                    <p>Used in HTML, CSS & Js</p>
+                    <a href="https://github.com/saravan-patidar/TechnoHacks_Edutech/tree/main/countdown-timer" target="_blank">More</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="./images/Landing-page-screenshot.png" alt="">
+                <div class="pro-layer  flex">
+                    <h4>Landing Page</h4>
+                    <p>Used in HTML and CSS</p>
+                    <a href="https://github.com/saravan-patidar/OctaNet-/tree/main/Landing-page" target="_blank">More</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="./images/converter.png" alt="">
+                <div class="pro-layer  flex">
+                    <h4>Converter $$</h4>
+                    <p>Used in HTML, CSS & JS</p>
+                    <a href="https://github.com/saravan-patidar/TechnoHacks_Edutech/tree/main/currency-Converter" target="_blank">More</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="./images/registration-page.png" alt="">
+                <div class="pro-layer  flex">
+                    <h4>Registration Page</h4>
+                    <p>Used in HTML, CSS & JS</p>
+                    <a
+                        href="https://github.com/saravan-patidar/TechnoHacks_Edutech/tree/main/Registration_page" target="_blank">More</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="./images/calculator.png" alt="">
+                <div class="pro-layer  flex">
+                    <h4>Calculator</h4>
+                    <p>Used in HTML and CSS</p>
+                    <a href="https://github.com/saravan-patidar/Codsoft/tree/main/Task2-Calculator" target="_blank">More</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span class="name-c">Me</span></h2>
+        <form id="Form" class="form flex">
+            <div class="input-box">
+                <input type="text" name="from_name" placeholder="Full name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Mobile number">
+                <input type="text" name="subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" id="button" class="btn">
+        </form>
+        <div class="popup">
+            <i class="fa-solid fa-check fa-bounce"></i>
+            <p id="mesg"></p>
+            <button id="Ok-Btn" class="btn">Ok</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+            <p>Copyright © 2023 Saravan Patidar.All right reserved</p>
+        </div>
+    </footer>
+
+    <a class="to-top" href="#"><i class="fa-3x fa-solid fa-arrow-up fa-beat"></i></a>
+</body>
+
+</html>
